@@ -24,7 +24,10 @@ static LocalDeviceInfo *sharedInstance = nil;
 }
 -(NSString*)getLocalIP
 {
-    return localIP;
+    if(localIP!=nil)
+        return localIP;
+    else
+        return @"0.0.0.0";
 }
 -(void)setLocalPort:(NSString*)port
 {

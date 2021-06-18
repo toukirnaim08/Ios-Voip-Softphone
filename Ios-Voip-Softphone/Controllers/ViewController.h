@@ -10,6 +10,10 @@
 #import "UDPTransferService.h"
 
 @interface ViewController : UIViewController<RecieveMassage>
+{
+    CredentialService *credentialService;
+    UDPTransferService *udpTransferService;
+}
 
 
 @end

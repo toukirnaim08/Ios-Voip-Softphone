@@ -9,9 +9,28 @@
 
 @implementation UDPTransferService
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        sipRegistrationMessages =[[SipRegistrationMessages alloc] init];
+    }
+    return self;
+}
+
 -(void)startPacketTransfer
 {
     [self createClientUdpSocket];
+}
+
+-(void)startRegistration
+{
+    [sipRegistrationMessages setProperty];
+    NSString *regMsg = [sipRegistrationMessages createRegMessage];
+    NSData *regMsgBytes = [regMsg dataUsingEncoding:NSUTF8StringEncoding];
+    //[self->sipMessageSocket sendData:data toHost:@"169.239.160.17" port:5060 withTimeout:60 tag:200];
+    [self sendData:regMsgBytes toHost:[[SipServerInfo sharedInstance] getSipServerIP]
+              port:[[[SipServerInfo sharedInstance] getSipServerPort] intValue] withTimeout:60 tag:200];
 }
 
 

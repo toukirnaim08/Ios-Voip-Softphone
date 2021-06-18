@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,10 @@
 		EFF87D36267C57F6004552C2 /* SipServerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF87D35267C57F6004552C2 /* SipServerInfo.m */; };
 		EFF87D39267C589C004552C2 /* LocalDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF87D38267C589C004552C2 /* LocalDeviceInfo.m */; };
 		EFF87D3C267C5BEA004552C2 /* UDPTransferService.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF87D3B267C5BEA004552C2 /* UDPTransferService.m */; };
+		EFF87D3F267C93E9004552C2 /* SipRegistrationMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF87D3E267C93E9004552C2 /* SipRegistrationMessages.m */; };
+		EFF87D42267C9550004552C2 /* SipSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF87D41267C9550004552C2 /* SipSettings.m */; };
+		EFF87D47267C95E4004552C2 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF87D43267C95E4004552C2 /* NSString+MD5.m */; };
+		EFF87D48267C95E4004552C2 /* NSString+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF87D44267C95E4004552C2 /* NSString+Random.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +51,14 @@
 		EFF87D38267C589C004552C2 /* LocalDeviceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalDeviceInfo.m; sourceTree = "<group>"; };
 		EFF87D3A267C5BEA004552C2 /* UDPTransferService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UDPTransferService.h; sourceTree = "<group>"; };
 		EFF87D3B267C5BEA004552C2 /* UDPTransferService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UDPTransferService.m; sourceTree = "<group>"; };
+		EFF87D3D267C93E9004552C2 /* SipRegistrationMessages.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SipRegistrationMessages.h; sourceTree = "<group>"; };
+		EFF87D3E267C93E9004552C2 /* SipRegistrationMessages.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SipRegistrationMessages.m; sourceTree = "<group>"; };
+		EFF87D40267C9550004552C2 /* SipSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SipSettings.h; sourceTree = "<group>"; };
+		EFF87D41267C9550004552C2 /* SipSettings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SipSettings.m; sourceTree = "<group>"; };
+		EFF87D43267C95E4004552C2 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		EFF87D44267C95E4004552C2 /* NSString+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Random.m"; sourceTree = "<group>"; };
+		EFF87D45267C95E4004552C2 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		EFF87D46267C95E4004552C2 /* NSString+Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Random.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +79,6 @@
 				D4A0A215DBB71DF049EC6121 /* Pods-Ios-Voip-Softphone.debug.xcconfig */,
 				1CAE39BF4AAFD4DC94D6221D /* Pods-Ios-Voip-Softphone.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -100,6 +111,7 @@
 		EFF87D0B267C491D004552C2 /* Ios-Voip-Softphone */ = {
 			isa = PBXGroup;
 			children = (
+				EFF87D49267C98DE004552C2 /* Settings */,
 				EFF87D33267C5465004552C2 /* SipLibrary */,
 				EFF87D28267C4985004552C2 /* Services */,
 				EFF87D27267C4963004552C2 /* Controllers */,
@@ -140,8 +152,8 @@
 		EFF87D27267C4963004552C2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				EFF87D12267C491D004552C2 /* ViewController.h */,
 				EFF87D13267C491D004552C2 /* ViewController.m */,
+				EFF87D12267C491D004552C2 /* ViewController.h */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -160,8 +172,23 @@
 		EFF87D33267C5465004552C2 /* SipLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				EFF87D3D267C93E9004552C2 /* SipRegistrationMessages.h */,
+				EFF87D3E267C93E9004552C2 /* SipRegistrationMessages.m */,
 			);
 			path = SipLibrary;
+			sourceTree = "<group>";
+		};
+		EFF87D49267C98DE004552C2 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				EFF87D45267C95E4004552C2 /* NSString+MD5.h */,
+				EFF87D43267C95E4004552C2 /* NSString+MD5.m */,
+				EFF87D46267C95E4004552C2 /* NSString+Random.h */,
+				EFF87D44267C95E4004552C2 /* NSString+Random.m */,
+				EFF87D40267C9550004552C2 /* SipSettings.h */,
+				EFF87D41267C9550004552C2 /* SipSettings.m */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,10 +306,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFF87D14267C491D004552C2 /* ViewController.m in Sources */,
+				EFF87D3F267C93E9004552C2 /* SipRegistrationMessages.m in Sources */,
 				EFF87D31267C53C0004552C2 /* CredentialService.m in Sources */,
+				EFF87D42267C9550004552C2 /* SipSettings.m in Sources */,
+				EFF87D47267C95E4004552C2 /* NSString+MD5.m in Sources */,
 				EFF87D39267C589C004552C2 /* LocalDeviceInfo.m in Sources */,
 				EFF87D0E267C491D004552C2 /* AppDelegate.m in Sources */,
 				EFF87D1F267C4922004552C2 /* main.m in Sources */,
+				EFF87D48267C95E4004552C2 /* NSString+Random.m in Sources */,
 				EFF87D11267C491D004552C2 /* SceneDelegate.m in Sources */,
 				EFF87D3C267C5BEA004552C2 /* UDPTransferService.m in Sources */,
 				EFF87D36267C57F6004552C2 /* SipServerInfo.m in Sources */,
