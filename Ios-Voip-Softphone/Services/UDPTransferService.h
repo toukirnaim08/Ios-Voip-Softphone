@@ -5,11 +5,25 @@
 //  Created by Toukir Naim on 18/6/21.
 //
 
+@import CocoaAsyncSocket;
+
 #import <Foundation/Foundation.h>
+#import "LocalDeviceInfo.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UDPTransferService : NSObject
+@protocol RecieveMassage <NSObject>
+- (void)recieveRegistrationResponse:(NSString*)msg;
+@end
+
+@interface UDPTransferService : NSObject<GCDAsyncUdpSocketDelegate>
+{
+    GCDAsyncUdpSocket *udpSocket;
+}
+
+@property (assign, nonatomic) id<RecieveMassage> recieveMassage;
+
+-(void)startPacketTransfer;
 
 @end
 

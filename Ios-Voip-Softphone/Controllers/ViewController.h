@@ -7,8 +7,9 @@
 
 #import <UIKit/UIKit.h>
 #import "CredentialService.h"
+#import "UDPTransferService.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<RecieveMassage>
 
 
 @end
