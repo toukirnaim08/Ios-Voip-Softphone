@@ -6,13 +6,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 #import "CredentialService.h"
 #import "UDPTransferService.h"
+#import "NotificationView.h"
 
 @interface ViewController : UIViewController<RecieveMassage>
 {
     CredentialService *credentialService;
     UDPTransferService *udpTransferService;
+    
+    NotificationView *notificationView;
 }
 
 

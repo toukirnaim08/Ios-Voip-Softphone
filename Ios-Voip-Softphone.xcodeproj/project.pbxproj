@@ -24,6 +24,7 @@
 		EFF87D42267C9550004552C2 /* SipSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF87D41267C9550004552C2 /* SipSettings.m */; };
 		EFF87D47267C95E4004552C2 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF87D43267C95E4004552C2 /* NSString+MD5.m */; };
 		EFF87D48267C95E4004552C2 /* NSString+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF87D44267C95E4004552C2 /* NSString+Random.m */; };
+		EFF87D4C267CC06A004552C2 /* NotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF87D4B267CC06A004552C2 /* NotificationView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,8 @@
 		EFF87D44267C95E4004552C2 /* NSString+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Random.m"; sourceTree = "<group>"; };
 		EFF87D45267C95E4004552C2 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		EFF87D46267C95E4004552C2 /* NSString+Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Random.h"; sourceTree = "<group>"; };
+		EFF87D4A267CC06A004552C2 /* NotificationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationView.h; sourceTree = "<group>"; };
+		EFF87D4B267CC06A004552C2 /* NotificationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +148,8 @@
 		EFF87D26267C4956004552C2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EFF87D4A267CC06A004552C2 /* NotificationView.h */,
+				EFF87D4B267CC06A004552C2 /* NotificationView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -152,8 +157,8 @@
 		EFF87D27267C4963004552C2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				EFF87D13267C491D004552C2 /* ViewController.m */,
 				EFF87D12267C491D004552C2 /* ViewController.h */,
+				EFF87D13267C491D004552C2 /* ViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -312,6 +317,7 @@
 				EFF87D47267C95E4004552C2 /* NSString+MD5.m in Sources */,
 				EFF87D39267C589C004552C2 /* LocalDeviceInfo.m in Sources */,
 				EFF87D0E267C491D004552C2 /* AppDelegate.m in Sources */,
+				EFF87D4C267CC06A004552C2 /* NotificationView.m in Sources */,
 				EFF87D1F267C4922004552C2 /* main.m in Sources */,
 				EFF87D48267C95E4004552C2 /* NSString+Random.m in Sources */,
 				EFF87D11267C491D004552C2 /* SceneDelegate.m in Sources */,
