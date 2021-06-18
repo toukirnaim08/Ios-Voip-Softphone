@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>SIPSwitchIP</key>
-	<string>169.239.163.5</string>
+	<string>&lt;your server ip&gt;</string>
 	<key>SIPSwitchPort</key>
-	<string>5060</string>
+	<string>&lt;your server port&gt;</string>
 	<key>UserName</key>
-	<string>76009</string>
+	<string>&lt;user name&gt;</string>
 	<key>Password</key>
-	<string>8610</string>
+	<string>&lt;password&gt;</string>
 </dict>
 </plist>
