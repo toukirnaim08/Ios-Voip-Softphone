@@ -14,7 +14,11 @@
 		EFF87D19267C4922004552C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFF87D18267C4922004552C2 /* Assets.xcassets */; };
 		EFF87D1C267C4922004552C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFF87D1A267C4922004552C2 /* LaunchScreen.storyboard */; };
 		EFF87D1F267C4922004552C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF87D1E267C4922004552C2 /* main.m */; };
-		EFF87D2C267C49DF004552C2 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF87D2B267C49DF004552C2 /* Config.m */; };
+		EFF87D2E267C507F004552C2 /* SipServerInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFF87D2D267C507F004552C2 /* SipServerInfo.plist */; };
+		EFF87D31267C53C0004552C2 /* CredentialService.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF87D30267C53C0004552C2 /* CredentialService.m */; };
+		EFF87D36267C57F6004552C2 /* SipServerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF87D35267C57F6004552C2 /* SipServerInfo.m */; };
+		EFF87D39267C589C004552C2 /* LocalDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF87D38267C589C004552C2 /* LocalDeviceInfo.m */; };
+		EFF87D3C267C5BEA004552C2 /* UDPTransferService.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF87D3B267C5BEA004552C2 /* UDPTransferService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +34,15 @@
 		EFF87D1B267C4922004552C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFF87D1D267C4922004552C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFF87D1E267C4922004552C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EFF87D2A267C49DF004552C2 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
-		EFF87D2B267C49DF004552C2 /* Config.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
+		EFF87D2D267C507F004552C2 /* SipServerInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SipServerInfo.plist; sourceTree = "<group>"; };
+		EFF87D2F267C53C0004552C2 /* CredentialService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CredentialService.h; sourceTree = "<group>"; };
+		EFF87D30267C53C0004552C2 /* CredentialService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CredentialService.m; sourceTree = "<group>"; };
+		EFF87D34267C57F6004552C2 /* SipServerInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SipServerInfo.h; sourceTree = "<group>"; };
+		EFF87D35267C57F6004552C2 /* SipServerInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SipServerInfo.m; sourceTree = "<group>"; };
+		EFF87D37267C589C004552C2 /* LocalDeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalDeviceInfo.h; sourceTree = "<group>"; };
+		EFF87D38267C589C004552C2 /* LocalDeviceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalDeviceInfo.m; sourceTree = "<group>"; };
+		EFF87D3A267C5BEA004552C2 /* UDPTransferService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UDPTransferService.h; sourceTree = "<group>"; };
+		EFF87D3B267C5BEA004552C2 /* UDPTransferService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UDPTransferService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +75,7 @@
 		EFF87D0B267C491D004552C2 /* Ios-Voip-Softphone */ = {
 			isa = PBXGroup;
 			children = (
-				EFF87D29267C49B6004552C2 /* Config */,
+				EFF87D33267C5465004552C2 /* SipLibrary */,
 				EFF87D28267C4985004552C2 /* Services */,
 				EFF87D27267C4963004552C2 /* Controllers */,
 				EFF87D26267C4956004552C2 /* Views */,
@@ -78,6 +89,7 @@
 				EFF87D1A267C4922004552C2 /* LaunchScreen.storyboard */,
 				EFF87D1D267C4922004552C2 /* Info.plist */,
 				EFF87D1E267C4922004552C2 /* main.m */,
+				EFF87D2D267C507F004552C2 /* SipServerInfo.plist */,
 			);
 			path = "Ios-Voip-Softphone";
 			sourceTree = "<group>";
@@ -85,6 +97,10 @@
 		EFF87D25267C4950004552C2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EFF87D34267C57F6004552C2 /* SipServerInfo.h */,
+				EFF87D35267C57F6004552C2 /* SipServerInfo.m */,
+				EFF87D37267C589C004552C2 /* LocalDeviceInfo.h */,
+				EFF87D38267C589C004552C2 /* LocalDeviceInfo.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -108,17 +124,19 @@
 		EFF87D28267C4985004552C2 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				EFF87D2F267C53C0004552C2 /* CredentialService.h */,
+				EFF87D30267C53C0004552C2 /* CredentialService.m */,
+				EFF87D3A267C5BEA004552C2 /* UDPTransferService.h */,
+				EFF87D3B267C5BEA004552C2 /* UDPTransferService.m */,
 			);
 			path = Services;
 			sourceTree = "<group>";
 		};
-		EFF87D29267C49B6004552C2 /* Config */ = {
+		EFF87D33267C5465004552C2 /* SipLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				EFF87D2A267C49DF004552C2 /* Config.h */,
-				EFF87D2B267C49DF004552C2 /* Config.m */,
 			);
-			path = Config;
+			path = SipLibrary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFF87D2E267C507F004552C2 /* SipServerInfo.plist in Resources */,
 				EFF87D1C267C4922004552C2 /* LaunchScreen.storyboard in Resources */,
 				EFF87D19267C4922004552C2 /* Assets.xcassets in Resources */,
 				EFF87D17267C491E004552C2 /* Main.storyboard in Resources */,
@@ -190,11 +209,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFF87D2C267C49DF004552C2 /* Config.m in Sources */,
 				EFF87D14267C491D004552C2 /* ViewController.m in Sources */,
+				EFF87D31267C53C0004552C2 /* CredentialService.m in Sources */,
+				EFF87D39267C589C004552C2 /* LocalDeviceInfo.m in Sources */,
 				EFF87D0E267C491D004552C2 /* AppDelegate.m in Sources */,
 				EFF87D1F267C4922004552C2 /* main.m in Sources */,
 				EFF87D11267C491D004552C2 /* SceneDelegate.m in Sources */,
+				EFF87D3C267C5BEA004552C2 /* UDPTransferService.m in Sources */,
+				EFF87D36267C57F6004552C2 /* SipServerInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

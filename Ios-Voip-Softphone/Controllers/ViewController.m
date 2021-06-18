@@ -15,6 +15,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    CredentialService *credentialService=[[CredentialService alloc] init];
+    [credentialService configSipServer];
+    [credentialService configLocalDeviceInfo];
     // Do any additional setup after loading the view.
 }
 

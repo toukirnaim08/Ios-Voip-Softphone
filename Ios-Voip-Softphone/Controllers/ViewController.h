@@ -6,6 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CredentialService.h"
 
 @interface ViewController : UIViewController
 

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SIPSwitchIP</key>
+	<string>169.239.163.5</string>
+	<key>SIPSwitchPort</key>
+	<string>5060</string>
+	<key>UserName</key>
+	<string>76009</string>
+	<key>Password</key>
+	<string>8610</string>
+</dict>
+</plist>
