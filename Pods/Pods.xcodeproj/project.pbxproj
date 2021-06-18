@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0EC1806437F66CC12F06DD7ACD1FBA4A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5359E8FB322457653E676483AB72D7B1 /* Security.framework */; };
+		14703875367641811BD5FE75ACD67C96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B655093DDCC0176DEAC903ABA8E76527 /* Foundation.framework */; };
+		1C7C608091334B29AA1F96D400B24326 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DEE8A2C9D85B1AE3111A98DABA3911 /* GCDAsyncSocket.m */; };
+		20386C4BEBA1CEA6E5EDB1669B7ADD76 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC814063E47992E7A90FA41688C2A454 /* CFNetwork.framework */; };
+		2604B7A2429846E7B83E84EFDCAB6255 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B655093DDCC0176DEAC903ABA8E76527 /* Foundation.framework */; };
+		2922C954DCA50DB1C087E9E9C9440393 /* CocoaAsyncSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87D53D2468F4A76F969B555628969C00 /* CocoaAsyncSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		411EE6BA92B228BF3497175C14FC7A90 /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = C8710A4087DF748E081735FBBBC2E72B /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FFB23DD5E8DD756D3A4AB53EEE4BA8E /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A9B6CEB7A4373DC0D4DCB1C9C5E465 /* GCDAsyncUdpSocket.m */; };
+		9743DA4B37DA850A8FD18EF5A1B3907E /* Pods-Ios-Voip-Softphone-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B8F4A0E0F792DAC28A790B532E2C4DB /* Pods-Ios-Voip-Softphone-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5ED710EC0B670894CE9103843A456EA /* Pods-Ios-Voip-Softphone-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D2BB5CA7CF088653012BD272BFD864 /* Pods-Ios-Voip-Softphone-dummy.m */; };
+		DF77DA76BD5962EE7DD383126BBBBAC8 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 9374467D9662C558DC594371C21B1B16 /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBB70AF3F803450935EE98C837D98688 /* CocoaAsyncSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA2F280BBE43CE867EB51D76410E472 /* CocoaAsyncSocket-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		802143B855178AA081C348C95D997A6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6083682834ABE0AE7BD1CBF06CADD036;
+			remoteInfo = CocoaAsyncSocket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		032C0E4C2E998AEEF4EA9DF8C44E78B9 /* Pods-Ios-Voip-Softphone-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Ios-Voip-Softphone-acknowledgements.plist"; sourceTree = "<group>"; };
+		15D031E282A5CFCC3CF35A9CB78018FE /* CocoaAsyncSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CocoaAsyncSocket.modulemap; sourceTree = "<group>"; };
+		1A7CF9F2D85AD6EB2D9F534DBEC491A7 /* CocoaAsyncSocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.debug.xcconfig; sourceTree = "<group>"; };
+		29D2BB5CA7CF088653012BD272BFD864 /* Pods-Ios-Voip-Softphone-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Ios-Voip-Softphone-dummy.m"; sourceTree = "<group>"; };
+		2BC45956A2BC4F12CADCDA62207C899E /* Pods_Ios_Voip_Softphone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Ios_Voip_Softphone.framework; path = "Pods-Ios-Voip-Softphone.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3965F888F6438A2EE77B1A34A4055CB5 /* Pods-Ios-Voip-Softphone.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Ios-Voip-Softphone.modulemap"; sourceTree = "<group>"; };
+		41DEE8A2C9D85B1AE3111A98DABA3911 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = Source/GCD/GCDAsyncSocket.m; sourceTree = "<group>"; };
+		517D13E58160E6AF4CC90189C711892E /* CocoaAsyncSocket-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CocoaAsyncSocket-Info.plist"; sourceTree = "<group>"; };
+		5359E8FB322457653E676483AB72D7B1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		5CE1E8858C6639EA2736554B50D9F3CC /* CocoaAsyncSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-prefix.pch"; sourceTree = "<group>"; };
+		60E3DAD9AFAE1416F7710DC632503ECE /* Pods-Ios-Voip-Softphone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ios-Voip-Softphone.debug.xcconfig"; sourceTree = "<group>"; };
+		6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaAsyncSocket.framework; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72F29FE7499B83FB5FD580208F4E0F8D /* CocoaAsyncSocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.release.xcconfig; sourceTree = "<group>"; };
+		78A9B6CEB7A4373DC0D4DCB1C9C5E465 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = Source/GCD/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		87D53D2468F4A76F969B555628969C00 /* CocoaAsyncSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-umbrella.h"; sourceTree = "<group>"; };
+		9374467D9662C558DC594371C21B1B16 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = Source/GCD/GCDAsyncSocket.h; sourceTree = "<group>"; };
+		9B8F4A0E0F792DAC28A790B532E2C4DB /* Pods-Ios-Voip-Softphone-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Ios-Voip-Softphone-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E534B0FB6CF00760893BD38CAFC8C64 /* Pods-Ios-Voip-Softphone-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Ios-Voip-Softphone-frameworks.sh"; sourceTree = "<group>"; };
+		AA787692997E726CBA4B3FB6DE379F44 /* Pods-Ios-Voip-Softphone-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Ios-Voip-Softphone-Info.plist"; sourceTree = "<group>"; };
+		B655093DDCC0176DEAC903ABA8E76527 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		BCD00B2486899A8C6EA9C0CF2B55AA67 /* Pods-Ios-Voip-Softphone-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Ios-Voip-Softphone-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C8710A4087DF748E081735FBBBC2E72B /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = Source/GCD/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		CC814063E47992E7A90FA41688C2A454 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		CCB1A52DD31C41AED9D6590B006EE816 /* Pods-Ios-Voip-Softphone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ios-Voip-Softphone.release.xcconfig"; sourceTree = "<group>"; };
+		DCA2F280BBE43CE867EB51D76410E472 /* CocoaAsyncSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaAsyncSocket-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		160EF26C734A27A9436CAB7143AF8F15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20386C4BEBA1CEA6E5EDB1669B7ADD76 /* CFNetwork.framework in Frameworks */,
+				14703875367641811BD5FE75ACD67C96 /* Foundation.framework in Frameworks */,
+				0EC1806437F66CC12F06DD7ACD1FBA4A /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7390A63B46B40AE1D99213BC66ACA2D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2604B7A2429846E7B83E84EFDCAB6255 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDB0DD9DF2184EAAFFD00F527DE67764 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		20FBA2814F5B8EB1A46334124B635D73 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				15D031E282A5CFCC3CF35A9CB78018FE /* CocoaAsyncSocket.modulemap */,
+				DCA2F280BBE43CE867EB51D76410E472 /* CocoaAsyncSocket-dummy.m */,
+				517D13E58160E6AF4CC90189C711892E /* CocoaAsyncSocket-Info.plist */,
+				5CE1E8858C6639EA2736554B50D9F3CC /* CocoaAsyncSocket-prefix.pch */,
+				87D53D2468F4A76F969B555628969C00 /* CocoaAsyncSocket-umbrella.h */,
+				1A7CF9F2D85AD6EB2D9F534DBEC491A7 /* CocoaAsyncSocket.debug.xcconfig */,
+				72F29FE7499B83FB5FD580208F4E0F8D /* CocoaAsyncSocket.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CocoaAsyncSocket";
+			sourceTree = "<group>";
+		};
+		373C359448D2FE5E324789714B155B58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket.framework */,
+				2BC45956A2BC4F12CADCDA62207C899E /* Pods_Ios_Voip_Softphone.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB2BDAA8DB999C491DAC5EAE1CFDC78F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F26488BF13288A9B8CB091FA9570EC0F /* CocoaAsyncSocket */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BDB0DD9DF2184EAAFFD00F527DE67764 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CC814063E47992E7A90FA41688C2A454 /* CFNetwork.framework */,
+				B655093DDCC0176DEAC903ABA8E76527 /* Foundation.framework */,
+				5359E8FB322457653E676483AB72D7B1 /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C84C2A044BDB26982064702776B3E898 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F79F0C91076A009978D0B5E2D4882088 /* Pods-Ios-Voip-Softphone */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				BB2BDAA8DB999C491DAC5EAE1CFDC78F /* Pods */,
+				373C359448D2FE5E324789714B155B58 /* Products */,
+				C84C2A044BDB26982064702776B3E898 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		F26488BF13288A9B8CB091FA9570EC0F /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				9374467D9662C558DC594371C21B1B16 /* GCDAsyncSocket.h */,
+				41DEE8A2C9D85B1AE3111A98DABA3911 /* GCDAsyncSocket.m */,
+				C8710A4087DF748E081735FBBBC2E72B /* GCDAsyncUdpSocket.h */,
+				78A9B6CEB7A4373DC0D4DCB1C9C5E465 /* GCDAsyncUdpSocket.m */,
+				20FBA2814F5B8EB1A46334124B635D73 /* Support Files */,
+			);
+			name = CocoaAsyncSocket;
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		F79F0C91076A009978D0B5E2D4882088 /* Pods-Ios-Voip-Softphone */ = {
+			isa = PBXGroup;
+			children = (
+				3965F888F6438A2EE77B1A34A4055CB5 /* Pods-Ios-Voip-Softphone.modulemap */,
+				BCD00B2486899A8C6EA9C0CF2B55AA67 /* Pods-Ios-Voip-Softphone-acknowledgements.markdown */,
+				032C0E4C2E998AEEF4EA9DF8C44E78B9 /* Pods-Ios-Voip-Softphone-acknowledgements.plist */,
+				29D2BB5CA7CF088653012BD272BFD864 /* Pods-Ios-Voip-Softphone-dummy.m */,
+				9E534B0FB6CF00760893BD38CAFC8C64 /* Pods-Ios-Voip-Softphone-frameworks.sh */,
+				AA787692997E726CBA4B3FB6DE379F44 /* Pods-Ios-Voip-Softphone-Info.plist */,
+				9B8F4A0E0F792DAC28A790B532E2C4DB /* Pods-Ios-Voip-Softphone-umbrella.h */,
+				60E3DAD9AFAE1416F7710DC632503ECE /* Pods-Ios-Voip-Softphone.debug.xcconfig */,
+				CCB1A52DD31C41AED9D6590B006EE816 /* Pods-Ios-Voip-Softphone.release.xcconfig */,
+			);
+			name = "Pods-Ios-Voip-Softphone";
+			path = "Target Support Files/Pods-Ios-Voip-Softphone";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1358DF7C179CD217A178C282604043AD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9743DA4B37DA850A8FD18EF5A1B3907E /* Pods-Ios-Voip-Softphone-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82807D639FCFDF56A607D3970098A87 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2922C954DCA50DB1C087E9E9C9440393 /* CocoaAsyncSocket-umbrella.h in Headers */,
+				DF77DA76BD5962EE7DD383126BBBBAC8 /* GCDAsyncSocket.h in Headers */,
+				411EE6BA92B228BF3497175C14FC7A90 /* GCDAsyncUdpSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65B2BBD8991DD61ACE6737AADB85AB43 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */;
+			buildPhases = (
+				F82807D639FCFDF56A607D3970098A87 /* Headers */,
+				4920E2F47EC0874D094992B0DD2CA9E7 /* Sources */,
+				160EF26C734A27A9436CAB7143AF8F15 /* Frameworks */,
+				B7B5EDC45A81FF70431CFBFB2ABDFFEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaAsyncSocket;
+			productName = CocoaAsyncSocket;
+			productReference = 6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7EDBAE9B9DE856A28614D6034AD03296 /* Pods-Ios-Voip-Softphone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F713EAD4663C27E57C2594875780DC8 /* Build configuration list for PBXNativeTarget "Pods-Ios-Voip-Softphone" */;
+			buildPhases = (
+				1358DF7C179CD217A178C282604043AD /* Headers */,
+				E97D5A6335D7C11FE049E8C521A0CB5B /* Sources */,
+				7390A63B46B40AE1D99213BC66ACA2D1 /* Frameworks */,
+				22523AC59674BADE4CAAC86F2A44BE24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBACC4145CB923E0F2AF14CA8FE83F82 /* PBXTargetDependency */,
+			);
+			name = "Pods-Ios-Voip-Softphone";
+			productName = "Pods-Ios-Voip-Softphone";
+			productReference = 2BC45956A2BC4F12CADCDA62207C899E /* Pods_Ios_Voip_Softphone.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 373C359448D2FE5E324789714B155B58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */,
+				7EDBAE9B9DE856A28614D6034AD03296 /* Pods-Ios-Voip-Softphone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22523AC59674BADE4CAAC86F2A44BE24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7B5EDC45A81FF70431CFBFB2ABDFFEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4920E2F47EC0874D094992B0DD2CA9E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB70AF3F803450935EE98C837D98688 /* CocoaAsyncSocket-dummy.m in Sources */,
+				1C7C608091334B29AA1F96D400B24326 /* GCDAsyncSocket.m in Sources */,
+				6FFB23DD5E8DD756D3A4AB53EEE4BA8E /* GCDAsyncUdpSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E97D5A6335D7C11FE049E8C521A0CB5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5ED710EC0B670894CE9103843A456EA /* Pods-Ios-Voip-Softphone-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BBACC4145CB923E0F2AF14CA8FE83F82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaAsyncSocket;
+			target = 6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */;
+			targetProxy = 802143B855178AA081C348C95D997A6A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		185BE20DBDCF3309F79E6192256EF4CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2ACAD1EFAB6844F8203E39D090E3CAB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A7CF9F2D85AD6EB2D9F534DBEC491A7 /* CocoaAsyncSocket.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
+				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		605BE56C09B42ED52413DE609DF011EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72F29FE7499B83FB5FD580208F4E0F8D /* CocoaAsyncSocket.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
+				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		62A8D55F94EA88AF19769F00CF77DF3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8C784812F78DAD3D804690570A84ECCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCB1A52DD31C41AED9D6590B006EE816 /* Pods-Ios-Voip-Softphone.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Ios-Voip-Softphone/Pods-Ios-Voip-Softphone-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Ios-Voip-Softphone/Pods-Ios-Voip-Softphone.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B301505647C859EE12F6F8C5D9F1500A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60E3DAD9AFAE1416F7710DC632503ECE /* Pods-Ios-Voip-Softphone.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Ios-Voip-Softphone/Pods-Ios-Voip-Softphone-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Ios-Voip-Softphone/Pods-Ios-Voip-Softphone.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F713EAD4663C27E57C2594875780DC8 /* Build configuration list for PBXNativeTarget "Pods-Ios-Voip-Softphone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B301505647C859EE12F6F8C5D9F1500A /* Debug */,
+				8C784812F78DAD3D804690570A84ECCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				185BE20DBDCF3309F79E6192256EF4CA /* Debug */,
+				62A8D55F94EA88AF19769F00CF77DF3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65B2BBD8991DD61ACE6737AADB85AB43 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ACAD1EFAB6844F8203E39D090E3CAB4 /* Debug */,
+				605BE56C09B42ED52413DE609DF011EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

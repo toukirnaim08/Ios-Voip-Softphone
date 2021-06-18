@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E4B9D69E3BD555D808FC219 /* Pods_Ios_Voip_Softphone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F36B015D7AF361D03930371 /* Pods_Ios_Voip_Softphone.framework */; };
 		EFF87D0E267C491D004552C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF87D0D267C491D004552C2 /* AppDelegate.m */; };
 		EFF87D11267C491D004552C2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF87D10267C491D004552C2 /* SceneDelegate.m */; };
 		EFF87D14267C491D004552C2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF87D13267C491D004552C2 /* ViewController.m */; };
@@ -22,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1CAE39BF4AAFD4DC94D6221D /* Pods-Ios-Voip-Softphone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ios-Voip-Softphone.release.xcconfig"; path = "Target Support Files/Pods-Ios-Voip-Softphone/Pods-Ios-Voip-Softphone.release.xcconfig"; sourceTree = "<group>"; };
+		6F36B015D7AF361D03930371 /* Pods_Ios_Voip_Softphone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ios_Voip_Softphone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4A0A215DBB71DF049EC6121 /* Pods-Ios-Voip-Softphone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ios-Voip-Softphone.debug.xcconfig"; path = "Target Support Files/Pods-Ios-Voip-Softphone/Pods-Ios-Voip-Softphone.debug.xcconfig"; sourceTree = "<group>"; };
 		EFF87D09267C491D004552C2 /* Ios-Voip-Softphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ios-Voip-Softphone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFF87D0C267C491D004552C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EFF87D0D267C491D004552C2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -50,17 +54,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E4B9D69E3BD555D808FC219 /* Pods_Ios_Voip_Softphone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9DAD6D4ACF832ED4354128E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4A0A215DBB71DF049EC6121 /* Pods-Ios-Voip-Softphone.debug.xcconfig */,
+				1CAE39BF4AAFD4DC94D6221D /* Pods-Ios-Voip-Softphone.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A47DAF0D13C1413D61A36CB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F36B015D7AF361D03930371 /* Pods_Ios_Voip_Softphone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EFF87D00267C491D004552C2 = {
 			isa = PBXGroup;
 			children = (
 				EFF87D0B267C491D004552C2 /* Ios-Voip-Softphone */,
 				EFF87D0A267C491D004552C2 /* Products */,
+				9DAD6D4ACF832ED4354128E2 /* Pods */,
+				A47DAF0D13C1413D61A36CB2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,9 +171,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFF87D22267C4922004552C2 /* Build configuration list for PBXNativeTarget "Ios-Voip-Softphone" */;
 			buildPhases = (
+				8390215F0EA392FAE44F79FC /* [CP] Check Pods Manifest.lock */,
 				EFF87D05267C491D004552C2 /* Sources */,
 				EFF87D06267C491D004552C2 /* Frameworks */,
 				EFF87D07267C491D004552C2 /* Resources */,
+				F8C88C95749371AAB6CF6289 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -203,6 +230,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8390215F0EA392FAE44F79FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ios-Voip-Softphone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8C88C95749371AAB6CF6289 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ios-Voip-Softphone/Pods-Ios-Voip-Softphone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ios-Voip-Softphone/Pods-Ios-Voip-Softphone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ios-Voip-Softphone/Pods-Ios-Voip-Softphone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EFF87D05267C491D004552C2 /* Sources */ = {
@@ -356,6 +425,7 @@
 		};
 		EFF87D23267C4922004552C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4A0A215DBB71DF049EC6121 /* Pods-Ios-Voip-Softphone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -374,6 +444,7 @@
 		};
 		EFF87D24267C4922004552C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CAE39BF4AAFD4DC94D6221D /* Pods-Ios-Voip-Softphone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
