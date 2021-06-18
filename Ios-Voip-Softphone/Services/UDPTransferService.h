@@ -6,7 +6,7 @@
 //
 #import <Foundation/Foundation.h>
 @protocol RecieveMassage <NSObject>
-- (void)recieveRegistrationResponse:(NSString*)msg;
+- (void)recieveRegistrationResponse:(NSString*)responseCode;
 @end
 
 @import CocoaAsyncSocket;

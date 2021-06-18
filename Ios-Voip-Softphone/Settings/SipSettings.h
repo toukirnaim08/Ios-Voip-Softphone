@@ -18,6 +18,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)randomNumericStringWithLength:(NSInteger)length;
 
 - (NSString *)convertMD5:(NSString*) originalText;
+
+- (NSString *)toBinary:(NSInteger)input;
+- (int)getRandomNumberBetween:(int)from andto:(int)to;
 @end
 
 NS_ASSUME_NONNULL_END

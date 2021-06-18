@@ -30,5 +30,33 @@ static SipSettings *sharedInstance = nil;
 {
     return [originalText MD5String];
 }
+-(NSString *)toBinary:(NSInteger)input
+{
+    NSMutableString * string = [[NSMutableString alloc] init];
 
+    int spacing = 1;
+    int width = ( sizeof( input ) ) * spacing;
+    int binaryDigit = 0;
+    int integer = input;
+
+    while( binaryDigit < width )
+    {
+        binaryDigit++;
+
+        [string insertString:( (integer & 1) ? @"1" : @"0" )atIndex:0];
+
+        if( binaryDigit % spacing == 0 && binaryDigit != width )
+        {
+            [string insertString:@"" atIndex:0];
+        }
+
+        integer = integer >> 1;
+    }
+
+    return string;
+}
+-(int)getRandomNumberBetween:(int)from andto:(int)to {
+
+    return (int)from + arc4random() % (to-from+1);
+}
 @end

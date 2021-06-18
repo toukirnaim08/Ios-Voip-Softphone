@@ -6,9 +6,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <CommonCrypto/CommonCrypto.h>
 #import "LocalDeviceInfo.h"
 #import "SipServerInfo.h"
 #import "SipSettings.h"
+
 
 NS_ASSUME_NONNULL_BEGIN
 #define branchPreffix @"z9hG4bK"

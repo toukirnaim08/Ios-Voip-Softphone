@@ -45,8 +45,9 @@
     [udpTransferService startRegistration];
 }
 
-- (void)recieveRegistrationResponse:(nonnull NSString *)msg
+- (void)recieveRegistrationResponse:(nonnull NSString *)responseCode
 {
+    NSLog(@".......%@",responseCode);
 }
 
 @end
