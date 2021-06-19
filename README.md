@@ -7,6 +7,7 @@ Feel free to extend this library.<br><br>
 
 First clone this repository then set your sip server ip, port, username and password in "SipServerInfo.plist" file.<br>
 
+<img src="https://github.com/toukirnaim08/Ios-Voip-Softphone/blob/main/output1.png" width="200" height="433">        <img src="https://github.com/toukirnaim08/Ios-Voip-Softphone/blob/main/output2.png" width="200" height="433">
 
 
 #### Technologies:
