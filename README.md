@@ -16,7 +16,7 @@ Protocol: SIP(RFC 3261) , UDP<br>
 Encryption Digest: MD5<br>
 Language: Objective c.<br><br>
 
-Usually, you will find lots of open source SIP libraies such as pjsip, linphone, jsSip etc. But there architechture is too much complex <br>
+Usually, you will find lots of open source SIP libraries such as pjsip, linphone, jsSip etc. But there architechture is too much complex <br>
 for initial or basic development. In future, I will include audio codec such as G729 & G711 and RTP in this project.<br><br>
 
 If you dont know the basics of SIP protocol, i suggest you go to this link.<br>
